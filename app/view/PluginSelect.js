@@ -10,9 +10,9 @@ Ext.define('KikketerPlugins.view.PluginSelect', {
     items: [
       {
         xtype: 'container',
-        cls: 'header',
-        html: 'This is the test application for all the plugins created by Chris Weed and Kevin McDonald.<br /><br />' +
-          'If you have any questions or possible updates, please add a pull request to the git repository.'
+        cls: 'innerContent',
+        html: '<p>This is the test application for all the plugins created by Chris Weed and Kevin McDonald.</p><p>' +
+          'If you have any questions or possible updates, please add a pull request to the git repository.</p>'
       },
       {
         xtype: 'list',

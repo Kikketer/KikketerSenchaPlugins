@@ -10,7 +10,11 @@ Ext.define('KikketerPlugins.view.ButtonNavView', {
 
   config: {
     title: 'Button Navs',
-    html: 'Here\'s the better navigation view',
+    cls: 'innerContent',
+    html: '<p>Here\'s the better navigation view</p><p>The top two buttons are dictated and listened for in the ' +
+      'internal view.</p><p>' +
+      'The "back" button on the upper left is hand written in this case, but normally you would want to do that ' +
+      'with the standard navigation view features.</p>',
     navBarButtons: {
       leftButton: {
         text: 'Back'

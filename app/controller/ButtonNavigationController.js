@@ -29,8 +29,7 @@ Ext.define('KikketerPlugins.controller.ButtonNavigationController', {
 
   onLeftTap: function() {
     // I really wish I could find reasonable documentation on the animate active item...
-    Ext.Viewport.getLayout().setAnimation({type: 'slide', direction: 'right', duration: 300});
-    Ext.Viewport.remove(this.getButtonsNavigationView());
+    Ext.Viewport.animateActiveItem({xtype: 'pluginselect'}, {type: 'slide', direction: 'right', duration: 300});
   },
 
   onRightTap: function() {

@@ -6,19 +6,21 @@
 $include-default-icons: false;
 @import 'sencha-touch/cupertino/all';
 
-@include icon-font('KikketerFont', inline-font-files('kikketerfont/kikketerfont.woff', woff, 'kikketerfont/kikketerfont.ttf', truetype, 'kikketerfont/kikketerfont.svg', svg));
-
-
 // A list item that needs the arrows, iOS specific
 .navlist-item {
-  &:after {
-    color: grey;
-    font-family: 'KikketerFont';
-    content: 'b';
-    float: right;
-    line-height: 1.5;
-    font-size: 1.8em;
-    margin-top: -1.5em;
-    margin-right: .6em;
+  background-image: url("../images/ArrowRight.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+@media screen and (-webkit-device-pixel-ratio: 2) {
+  .navlist-item {
+    background-image: url("../images/ArrowRight@2x.png");
+  }
+}
+
+.innerContent {
+  p {
+    margin: 5px 15px 10px 15px;
   }
 }
