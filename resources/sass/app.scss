@@ -1,0 +1,24 @@
+// The following two lines import the default Sencha Touch theme. If you are building
+// a new theme, remove them and the add your own CSS on top of the base CSS (which
+// is already included in your app.json file).
+@import 'sencha-touch/cupertino';
+// Put any color variables here
+$include-default-icons: false;
+@import 'sencha-touch/cupertino/all';
+
+@include icon-font('KikketerFont', inline-font-files('kikketerfont/kikketerfont.woff', woff, 'kikketerfont/kikketerfont.ttf', truetype, 'kikketerfont/kikketerfont.svg', svg));
+
+
+// A list item that needs the arrows, iOS specific
+.navlist-item {
+  &:after {
+    color: grey;
+    font-family: 'KikketerFont';
+    content: 'b';
+    float: right;
+    line-height: 1.5;
+    font-size: 1.8em;
+    margin-top: -1.5em;
+    margin-right: .6em;
+  }
+}
