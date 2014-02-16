@@ -2,18 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33f53c40-3c11-48bc-8d09-8ed5e28a6a4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/ArrowRight.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/ArrowRight@2x.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/stylesheets/fonts/kikketerfont/kikketerfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/stylesheets/fonts/kikketerfont/kikketerfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/stylesheets/fonts/kikketerfont/kikketerfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/stylesheets/fonts/kikketerfont/kikketerfont.woff" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/view/IosSelectView.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/iosSelect.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/readme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/controller/components/SelectFieldController.js" afterPath="$PROJECT_DIR$/app/controller/components/IosSelectFieldController.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/view/components/SelectField.js" afterPath="$PROJECT_DIR$/app/view/components/IosSelectField.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SenchaPlugins.iml" afterPath="$PROJECT_DIR$/.idea/SenchaPlugins.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/63cd9f74aca6eecd12fe33f23542bc4a80e40b4b/app.scssc" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/63cd9f74aca6eecd12fe33f23542bc4a80e40b4b/app.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/ButtonNavView.js" afterPath="$PROJECT_DIR$/app/view/ButtonNavView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/ButtonNavigationController.js" afterPath="$PROJECT_DIR$/app/controller/ButtonNavigationController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/MainController.js" afterPath="$PROJECT_DIR$/app/controller/MainController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/PluginSelect.js" afterPath="$PROJECT_DIR$/app/view/PluginSelect.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/SecondButtonNavView.js" afterPath="$PROJECT_DIR$/app/view/SecondButtonNavView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/app.css" afterPath="$PROJECT_DIR$/resources/css/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/app.scss" afterPath="$PROJECT_DIR$/resources/sass/app.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -38,10 +39,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.53977275" vertical-offset="20" max-vertical-offset="900">
+            <state line="22" column="10" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="900">
               <folding />
             </state>
           </provider>
@@ -50,8 +51,10 @@
       <file leaf-file-name="PluginSelect.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/PluginSelect.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="22" selection-start="87" selection-end="99" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
-              <folding />
+            <state line="10" column="4" selection-start="220" selection-end="243" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
+              <folding>
+                <marker date="1392524837000" expanded="true" signature="48:1263" placeholder="{&quot;extend&quot;: 'Ext.Container'...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,7 +62,7 @@
       <file leaf-file-name="MainController.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controller/MainController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="93" selection-start="723" selection-end="812" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="570">
+            <state line="29" column="120" selection-start="975" selection-end="1024" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
               <folding />
             </state>
           </provider>
@@ -74,21 +77,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SecondButtonNavView.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/SecondButtonNavView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="43" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-              <folding>
-                <element signature="e#0#101#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ButtonNavView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/ButtonNavView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="24" selection-start="279" selection-end="299" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+            <state line="12" column="24" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
               <folding>
                 <element signature="e#0#101#0" expanded="false" />
               </folding>
@@ -96,11 +88,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
+      <file leaf-file-name="ButtonsNavigationView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/ButtonsNavigationView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="50" selection-start="402" selection-end="402" vertical-scroll-proportion="-2.4489796" vertical-offset="0" max-vertical-offset="465">
+            <state line="7" column="31" selection-start="225" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+              <folding>
+                <element signature="e#0#101#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IosSelectView.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/view/IosSelectView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="32" selection-start="603" selection-end="603" vertical-scroll-proportion="0.24504083" vertical-offset="150" max-vertical-offset="1050">
+              <folding>
+                <element signature="e#0#101#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IosSelectField.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/components/IosSelectField.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="91" column="24" selection-start="2116" selection-end="2116" vertical-scroll-proportion="0.0" vertical-offset="930" max-vertical-offset="1830">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IosSelectFieldController.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controller/components/IosSelectFieldController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="61" column="54" selection-start="1706" selection-end="1706" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1395">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SecondButtonNavView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/SecondButtonNavView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="24" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+              <folding>
+                <element signature="e#0#101#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,22 +157,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/view/Main.js" />
-        <option value="$PROJECT_DIR$/app/controller/components/SelectFieldController.js" />
-        <option value="$PROJECT_DIR$/app/view/components/NavView.js" />
-        <option value="$PROJECT_DIR$/app/view/components/SelectField.js" />
-        <option value="$PROJECT_DIR$/app/util/Helpers.js" />
         <option value="$PROJECT_DIR$/app/util/EndpointConfig.js" />
         <option value="$PROJECT_DIR$/app/controller/components/NavController.js" />
         <option value="$PROJECT_DIR$/app/view/ButtonsNavigationView.js" />
         <option value="$PROJECT_DIR$/app/controller/SecondButtonNavView.js" />
-        <option value="$PROJECT_DIR$/app/controller/MainController.js" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/app/view/ButtonNavView.js" />
-        <option value="$PROJECT_DIR$/app/view/SecondButtonNavView.js" />
-        <option value="$PROJECT_DIR$/resources/sass/app.scss" />
-        <option value="$PROJECT_DIR$/app/view/PluginSelect.js" />
         <option value="$PROJECT_DIR$/app/controller/ButtonNavigationController.js" />
+        <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/app/controller/MainController.js" />
+        <option value="$PROJECT_DIR$/resources/sass/iosSelect.scss" />
+        <option value="$PROJECT_DIR$/app/view/components/SelectField.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/app/controller/components/IosSelectFieldController.js" />
+        <option value="$PROJECT_DIR$/app/view/PluginSelect.js" />
+        <option value="$PROJECT_DIR$/app/view/IosSelectView.js" />
+        <option value="$PROJECT_DIR$/resources/sass/app.scss" />
+        <option value="$PROJECT_DIR$/app/view/SecondButtonNavView.js" />
+        <option value="$PROJECT_DIR$/app/view/ButtonNavView.js" />
       </list>
     </option>
   </component>
@@ -190,162 +224,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="SenchaPlugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SenchaPlugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SenchaPlugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="touch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SenchaPlugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SenchaPlugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="touch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SenchaPlugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SenchaPlugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="touch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sencha-touch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SenchaPlugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SenchaPlugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="touch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sencha-touch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cupertino" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SenchaPlugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SenchaPlugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="touch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sencha-touch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cupertino" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="var" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SenchaPlugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SenchaPlugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="touch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -653,7 +531,11 @@
       <created>1392484689659</created>
       <updated>1392484689659</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added the arrow icons">
+      <created>1392500243490</created>
+      <updated>1392500243490</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -690,52 +572,16 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial" />
+    <MESSAGE value="Added the arrow icons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the arrow icons" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/_cupertino.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="880" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/touch/resources/themes/stylesheets/sencha-touch/cupertino/var/_Class.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="411" selection-end="439" vertical-scroll-proportion="0.12635379" vertical-offset="0" max-vertical-offset="831" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/components/SelectField.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="27" selection-start="130" selection-end="130" vertical-scroll-proportion="0.08522727" vertical-offset="0" max-vertical-offset="1830" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/components/SelectFieldController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="20" selection-start="246" selection-end="246" vertical-scroll-proportion="0.1534091" vertical-offset="0" max-vertical-offset="885" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/util/Helpers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="22" selection-start="5124" selection-end="5124" vertical-scroll-proportion="1.4279124" vertical-offset="1372" max-vertical-offset="3030" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/util/EndpointConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="27" selection-start="130" selection-end="130" vertical-scroll-proportion="0.08522727" vertical-offset="0" max-vertical-offset="880" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/components/NavController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="52" selection-start="1226" selection-end="1226" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1845" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/MainController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="93" selection-start="723" selection-end="812" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/components/NavView.js">
@@ -745,34 +591,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/ButtonsNavigationView.js">
+    <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="31" selection-start="225" selection-end="246" vertical-scroll-proportion="0.06818182" vertical-offset="0" max-vertical-offset="880">
-          <folding>
-            <element signature="e#0#101#0" expanded="false" />
-          </folding>
+        <state line="0" column="23" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="880">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/ButtonNavView.js">
+    <entry file="file://$PROJECT_DIR$/resources/sass/config.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="24" selection-start="279" selection-end="299" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-          <folding>
-            <element signature="e#0#101#0" expanded="false" />
-          </folding>
+        <state line="7" column="15" selection-start="243" selection-end="243" vertical-scroll-proportion="0.12252042" vertical-offset="0" max-vertical-offset="857">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
+    <entry file="file://$PROJECT_DIR$/resources/sass/iosSelect.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="50" selection-start="402" selection-end="402" vertical-scroll-proportion="-2.4489796" vertical-offset="0" max-vertical-offset="465">
+        <state line="3" column="17" selection-start="68" selection-end="68" vertical-scroll-proportion="0.052570093" vertical-offset="0" max-vertical-offset="856">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/MainController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="120" selection-start="975" selection-end="1024" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/PluginSelect.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="22" selection-start="87" selection-end="99" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
+        <state line="10" column="4" selection-start="220" selection-end="243" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
+          <folding>
+            <marker date="1392524837000" expanded="true" signature="48:1263" placeholder="{&quot;extend&quot;: 'Ext.Container'...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="703" selection-end="770" vertical-scroll-proportion="0.41416568" vertical-offset="0" max-vertical-offset="833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/components/IosSelectField.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="24" selection-start="2116" selection-end="2116" vertical-scroll-proportion="0.0" vertical-offset="915" max-vertical-offset="1830">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/components/IosSelectFieldController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="54" selection-start="1706" selection-end="1706" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1395">
           <folding />
         </state>
       </provider>
@@ -784,9 +656,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/ButtonsNavigationView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="31" selection-start="225" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <folding>
+            <element signature="e#0#101#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/SecondButtonNavView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="43" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+        <state line="12" column="24" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <folding>
+            <element signature="e#0#101#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/ButtonNavView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="24" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
           <folding>
             <element signature="e#0#101#0" expanded="false" />
           </folding>
@@ -795,8 +685,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.53977275" vertical-offset="20" max-vertical-offset="900">
+        <state line="22" column="10" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="900">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/IosSelectView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="32" selection-start="603" selection-end="603" vertical-scroll-proportion="0.24504083" vertical-offset="150" max-vertical-offset="1050">
+          <folding>
+            <element signature="e#0#101#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

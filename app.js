@@ -17,7 +17,7 @@ Ext.application({
     'MainController',
     'ButtonNavigationController',
     'components.NavController',
-    'components.SelectFieldController'
+    'components.IosSelectFieldController'
   ],
 
   views: [

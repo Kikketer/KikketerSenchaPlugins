@@ -3,6 +3,10 @@ Ext.define('KikketerPlugins.view.PluginSelect', {
   xtype: 'pluginselect',
   selector: 'pluginselect',
 
+  requires: [
+    'KikketerPlugins.view.components.IosSelectField'
+  ],
+
   config: {
     styleHtmlContent: true,
     layout: 'vbox',
@@ -22,8 +26,8 @@ Ext.define('KikketerPlugins.view.PluginSelect', {
         style: 'margin-top: 15px',
         itemTpl: '{title}',
         data: [
-          {title: 'Navigation View', view: 'btnnavview'},
-          {title: 'iOS7 Select Box', view: 'iosselect'}
+          {title: 'Navigation View', view: 'ButtonsNavView'},
+          {title: 'iOS7 Select Box (No Navbar)', view: 'IosSelectView'}
         ]
       }
     ],
@@ -37,7 +41,7 @@ Ext.define('KikketerPlugins.view.PluginSelect', {
     ]
   },
 
-  onPluginSelect: function(self, index, target, record, e, eOpts) {
+  onPluginSelect: function(self, record) {
     var me = this;
     setTimeout(function() {
       me.down('#pluginlist').deselectAll();

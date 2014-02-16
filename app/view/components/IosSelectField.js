@@ -3,7 +3,7 @@
  * Copyright 2014 Liberty Mutual Insurance
  */
 
-Ext.define('KikketerPlugins.view.components.SelectField', {
+Ext.define('KikketerPlugins.view.components.IosSelectField', {
   extend: 'Ext.dataview.component.ListItem',
   xtype: 'iosselectfield',
   selector: 'iosselectfield',

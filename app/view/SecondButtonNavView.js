@@ -10,7 +10,7 @@ Ext.define('KikketerPlugins.view.SecondButtonNavView', {
 
   config: {
     title: 'Second',
-    cls: 'innerContent',
+    styleHtmlContent: true,
     html: '<p>This is the second pushed page, the buttons are cleared and reset.</p><p>' +
       'The upper left button is handed to us automatically by the navigation view.</p><p>' +
       'You are able to set any other navigation buttons in the view itself, removing the "what should be shown"' +

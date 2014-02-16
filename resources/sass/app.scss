@@ -6,6 +6,8 @@
 $include-default-icons: false;
 @import 'sencha-touch/cupertino/all';
 
+@import 'iosSelect';
+
 // A list item that needs the arrows, iOS specific
 .navlist-item {
   background-image: url("../images/ArrowRight.png");
@@ -19,8 +21,8 @@ $include-default-icons: false;
   }
 }
 
-.innerContent {
-  p {
-    margin: 5px 15px 10px 15px;
-  }
-}
+//.innerContent {
+//  p {
+//    margin: 5px 15px 10px 15px;
+//  }
+//}

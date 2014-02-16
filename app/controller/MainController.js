@@ -8,13 +8,15 @@ Ext.define('KikketerPlugins.controller.MainController', {
 
   requires: [
     'KikketerPlugins.view.ButtonsNavigationView',
+    'KikketerPlugins.view.IosSelectView',
     'KikketerPlugins.view.PluginSelect'
   ],
 
   config: {
     refs: {
       PluginSelect: {autoCreate: true, xtype: 'pluginselect', selector: 'pluginselect'},
-      ButtonsNavView: {autoCreate: true, xtype: 'buttonsnavigationview', selector: 'buttonsnavigationview'}
+      ButtonsNavView: {autoCreate: true, xtype: 'buttonsnavigationview', selector: 'buttonsnavigationview'},
+      IosSelectView: {autoCreate: true, xtype: 'iosselectview', selector: 'iosselectview'}
     },
     control: {
       PluginSelect: {
@@ -24,10 +26,7 @@ Ext.define('KikketerPlugins.controller.MainController', {
   },
 
   onPluginSelected: function(plugin) {
-    Ext.Viewport.add(this.getButtonsNavView());
-    Ext.Viewport.getLayout().setAnimation({type: 'slide', direction: 'left', duration: 300});
-    Ext.Viewport.setActiveItem(this.getButtonsNavView());
-//    Ext.Viewport.push(this.getButtonsNavView());
-//    Ext.Viewport.animateActiveItem(this.getButtonsNavView(), {type: 'slide', direction: 'left', duration: 300});
+    // Ignore the odd ties I'm using with the view and controller, I got lazy with the "if" checks
+    Ext.Viewport.animateActiveItem(this.getRefs()[plugin.get('view')], {type: 'slide', direction: 'left', duration: 300});
   }
 });
