@@ -25,7 +25,7 @@ Ext.define('KikketerPlugins.controller.components.NavController', {
     }
   },
 
-  onLeftButtonTap: function (obj, caller, partOfViewport) {
+  onLeftButtonTap: function(obj, caller, partOfViewport) {
     var currentNavView = Ext.ComponentQuery.query(caller.connectingController.info.target)[0];
     var currentView = currentNavView.getActiveItem();
 
@@ -34,7 +34,7 @@ Ext.define('KikketerPlugins.controller.components.NavController', {
     }
   },
 
-  onRightButtonTap: function (obj, caller) {
+  onRightButtonTap: function(obj, caller) {
     var currentNavView = Ext.ComponentQuery.query(caller.connectingController.info.target)[0];
     var currentView = currentNavView.getActiveItem();
 
@@ -44,11 +44,11 @@ Ext.define('KikketerPlugins.controller.components.NavController', {
   },
 
   // function to determine which buttons to show in the NavView, as well as populate text and actions
-  populateNavButtons: function (currentView, t) {
+  populateNavButtons: function(currentView, t) {
     this.addNavButtons(t);
   },
 
-  addNavButtons: function (navView, viewToLook) {
+  addNavButtons: function(navView, viewToLook) {
     var rightButtonDefaults = {
       align: 'right',
       itemId: 'right_action_button',
@@ -85,32 +85,28 @@ Ext.define('KikketerPlugins.controller.components.NavController', {
     }
   },
 
-  removeNavButtons: function (navView) {
-    // clean up old buttons
+  removeNavButtons: function(navView) {
+    // We do not remove buttons that are UI 'back', but anything else is game
     if (navView) {
-      var bar = navView.getNavigationBar();
-      var rightButton = Ext.ComponentQuery.query("#right_action_button", navView)[0];
-      if (rightButton) {
-        bar.remove(rightButton, true);
-      }
-
-      var leftButton = Ext.ComponentQuery.query("#left_action_button", navView)[0];
-      if (leftButton) {
-        bar.remove(leftButton, true);
-      }
+      var buttons = navView.query('button');
+      Ext.Array.each(buttons, function(btn) {
+        if(btn.getUi() != 'back') {
+          navView.getNavigationBar().remove(btn, true);
+        }
+      });
     }
   },
 
-  onInit: function (child) {
+  onInit: function(child) {
     this.addNavButtons(child.getParent(), child);
   },
 
-  onPop: function (self, popped) {
+  onPop: function(self, popped) {
     this.removeNavButtons(popped.getParent());
     this.addNavButtons(popped.getParent(), popped);
   },
 
-  onPush: function (self, pushed) {
+  onPush: function(self, pushed) {
     this.removeNavButtons(pushed.getParent());
     this.addNavButtons(pushed.getParent(), pushed);
   }
