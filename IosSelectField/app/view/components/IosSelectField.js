@@ -31,6 +31,8 @@ Ext.define('KikketerPlugins.view.components.IosSelectField', {
   store: null,
   currentSelection: null,
   defaultSelection: null,
+  tapTimer: null,
+  doubleTapTimer: 3000,
 
   setStore: function(store) {
     this.store = store;
@@ -86,8 +88,19 @@ Ext.define('KikketerPlugins.view.components.IosSelectField', {
   },
 
   onSelect: function() {
+    // For slower devices we need to make sure we don't double tap
     var navView = this.up('navigationview');
-    this.fireEvent('selectionBoxTapped', this, navView, this.store, this.currentSelection);
+    if(this.tapTimer) {
+      var diff = new Date().getTime() - this.tapTimer.getTime();
+      if(diff > this.doubleTapTimer) {
+        this.tapTimer = new Date();
+        this.fireEvent('selectionBoxTapped', this, navView, this.store, this.currentSelection);
+      }
+    }
+    else {
+      this.tapTimer = new Date();
+      this.fireEvent('selectionBoxTapped', this, navView, this.store, this.currentSelection);
+    }
   },
 
   initialize: function() {
@@ -106,6 +119,10 @@ Ext.define('KikketerPlugins.view.components.IosSelectField', {
     if (this.config.value) {
       this.setValue(this.config.value);
       this.setDefaultValue(this.config.value);
+    }
+
+    if (this.config.doubleTapTimer) {
+      this.doubleTapTimer = this.config.doubleTapTimer;
     }
 
   }
